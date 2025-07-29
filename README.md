@@ -19,10 +19,7 @@ Danny-Assignement1/
 │                   │   └── PetBAGApplication.java
 │                   └── demo/           # Demonstration programs
 │                       └── PetBAGDemo.java
-├── docs/                              # Documentation
-│   └── Global_Rain_Summary_Report.md
 ├── bin/                               # Compiled classes (created by build)
-├── build.sh                           # Build script
 └── README.md                          # This file
 ```
 
