@@ -69,7 +69,7 @@ Danny-Assignement1/
 ## Assignment Requirements Met
 
 ### Pet.java Class Requirements:
-✅ **All attributes with appropriate data structures**
+**All attributes with appropriate data structures**
 - petType (String)
 - petName (String) 
 - petAge (int)
@@ -78,14 +78,14 @@ Danny-Assignement1/
 - daysStay (int)
 - amountDue (double)
 
-✅ **Constructor methods**
+**Constructor methods**
 - Default constructor with initialization
 - Parameterized constructor for all attributes
 
-✅ **Accessors and mutators for all attributes**
+**Accessors and mutators for all attributes**
 - Complete getter and setter methods for all attributes
 
-✅ **Proper commenting and documentation**
+**Proper commenting and documentation**
 - JavaDoc comments for all methods
 - Inline comments explaining functionality
 
