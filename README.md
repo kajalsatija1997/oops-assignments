@@ -1,4 +1,4 @@
-#Pet BAG Assignment
+# Pet BAG Assignment
 
 ## Overview
 This project demonstrates object-oriented programming principles by creating a Pet class for the Pet BAG (Pet Boarding and Grooming) application. The assignment includes a Java class implementation, pseudocode, flowchart, and explanation of OOP principles.
