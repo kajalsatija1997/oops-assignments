@@ -1,4 +1,4 @@
-# IT 145 Project One - Pet BAG Assignment
+#Pet BAG Assignment
 
 ## Overview
 This project demonstrates object-oriented programming principles by creating a Pet class for the Pet BAG (Pet Boarding and Grooming) application. The assignment includes a Java class implementation, pseudocode, flowchart, and explanation of OOP principles.
@@ -66,14 +66,6 @@ Danny-Assignement1/
   - Demonstrates fee calculations
   - Example usage of all classes
 
-### 6. Global_Rain_Summary_Report.md
-- **Purpose**: Summary report containing pseudocode, flowchart, and OOP principles explanation
-- **Contents**:
-  - Pseudocode for pet check-in process
-  - Flowchart representation of the check-in logic
-  - Explanation of applied OOP principles (Encapsulation, Inheritance, Abstraction, Polymorphism)
-  - Additional implementation notes
-
 ## Assignment Requirements Met
 
 ### Pet.java Class Requirements:
@@ -96,63 +88,6 @@ Danny-Assignement1/
 ✅ **Proper commenting and documentation**
 - JavaDoc comments for all methods
 - Inline comments explaining functionality
-
-### Summary Report Requirements:
-✅ **Pseudocode for pet check-in process**
-- Logical step-by-step algorithm
-- Handles space availability checking
-- Includes grooming service logic for dogs
-- Manages returning pet scenarios
-
-✅ **Flowchart representation**
-- Clear start and end points
-- Appropriate decision branching
-- Aligned with check-in process specifications
-
-✅ **OOP principles explanation**
-- Detailed explanation of Encapsulation, Inheritance, Abstraction, and Polymorphism
-- Shows how principles are applied in the Pet class design
-
-## How to Use
-
-### For Assignment Submission:
-1. **Compile and Test Pet.java**:
-   ```bash
-   javac Pet.java
-   ```
-
-2. **Review the Summary Report**:
-   - Open `Global_Rain_Summary_Report.md` to view the complete analysis
-   - The pseudocode shows the logical flow for pet check-in
-   - The flowchart provides visual representation of the process
-   - OOP principles are explained with specific examples
-
-### For Complete Application Testing:
-1. **Use the build script** (recommended):
-   ```bash
-   ./build.sh
-   ```
-
-2. **Manual compilation**:
-   ```bash
-   # Create bin directory
-   mkdir -p bin
-   
-   # Compile model classes
-   javac -d bin src/main/java/com/petbag/model/*.java
-   
-   # Compile application classes
-   javac -cp bin -d bin src/main/java/com/petbag/application/*.java
-   
-   # Compile demo classes
-   javac -cp bin -d bin src/main/java/com/petbag/demo/*.java
-   
-   # Run main application
-   java -cp bin com.petbag.application.PetBAGApplication
-   
-   # Run demo
-   java -cp bin com.petbag.demo.PetBAGDemo
-   ```
 
 ### Application Features:
 - **Interactive Menu**: Choose check-in, check-out, or view status
