@@ -105,6 +105,84 @@ Danny-Assignement1/
 - **Type Safety**: Appropriate data types for all attributes
 - **Extensible Design**: Easy to add new pet types or features
 
+## Pseudo Code
+
+## 1. Pseudocode for Pet Check-In Process
+
+```
+FUNCTION petCheckIn()
+    // Initialize variables
+    DECLARE petType, petName, petAge, daysStay, groomingChoice
+    DECLARE dogSpaces = 30, catSpaces = 12
+    DECLARE isReturningPet = false
+    
+    // Step 1: Determine pet type and check space availability
+    PROMPT user for pet type (dog or cat)
+    IF petType equals "dog" THEN
+        IF dogSpaces > 0 THEN
+            SET available = true
+        ELSE
+            SET available = false
+            DISPLAY "No dog spaces available"
+        END IF
+    ELSE IF petType equals "cat" THEN
+        IF catSpaces > 0 THEN
+            SET available = true
+        ELSE
+            SET available = false
+            DISPLAY "No cat spaces available"
+        END IF
+    END IF
+    
+    // Step 2: If space is available, collect pet information
+    IF available equals true THEN
+        PROMPT user for pet name
+        PROMPT user for pet age
+        PROMPT user for length of stay (daysStay)
+        
+        // Step 3: Check if pet is returning customer
+        PROMPT user "Is this a returning pet? (yes/no)"
+        IF user response equals "yes" THEN
+            SET isReturningPet = true
+            // Update existing pet information as needed
+            PROMPT user to update pet information if needed
+        END IF
+        
+        // Step 4: Handle grooming option for dogs
+        IF petType equals "dog" AND daysStay >= 2 THEN
+            PROMPT user "Would you like grooming service? (yes/no)"
+            IF user response equals "yes" THEN
+                SET groomingChoice = true
+            ELSE
+                SET groomingChoice = false
+            END IF
+        ELSE
+            SET groomingChoice = false
+        END IF
+        
+        // Step 5: Assign boarding space
+        IF petType equals "dog" THEN
+            DECREMENT dogSpaces by 1
+            ASSIGN dog space number
+        ELSE IF petType equals "cat" THEN
+            DECREMENT catSpaces by 1
+            ASSIGN cat space number
+        END IF
+        
+        // Step 6: Calculate fees and display confirmation
+        CALCULATE boarding fees based on pet type and weight
+        IF groomingChoice equals true THEN
+            ADD grooming fee to total
+        END IF
+        DISPLAY confirmation message with pet details and fees
+        
+    ELSE
+        DISPLAY "Sorry, no space available for this pet type"
+    END IF
+    
+END FUNCTION
+```
+
 ## Business Logic Implemented
 
 The Pet class supports the Pet BAG business requirements:
